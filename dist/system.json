@@ -1,5 +1,5 @@
 {
-  "name": "pf2e TEST",
+  "name": "pf2e_TEST",
   "title": "Pathfinder 2nd Edition TEST",
   "description": "A community contributed game system for Pathfinder Second Edition.",
   "version": "1.10.13",
@@ -16,136 +16,136 @@
     {
       "name": "spells-srd",
       "label": "Spells (SRD)",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "./packs/spells.db",
       "entity": "Item"
     },
     {
       "name": "spell-effects",
       "label": "Spell Effects",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "./packs/spell-effects.db",
       "entity": "Item"
     },
     {
       "name": "feats-srd",
       "label": "Feats (SRD)",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "./packs/feats.db",
       "entity": "Item"
     },
     {
       "name": "equipment-srd",
       "label": "Equipment (SRD)",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "./packs/equipment.db",
       "entity": "Item"
     },
     {
       "name": "conditionspf2e",
       "label": "Conditions (PF2e)",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/conditionspf2e.db",
       "entity": "JournalEntry"
     },
     {
       "name": "conditionitems",
       "label": "Conditions (PF2e)",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/conditionitems.db",
       "entity": "Item"
     },
     {
       "name": "actionspf2e",
       "label": "Actions (SRD)",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/actions.db",
       "entity": "Item"
     },
     {
       "name": "archetypes",
       "label": "Archetypes",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/archetypes.db",
       "entity": "JournalEntry"
     },
     {
       "name": "pathfinder-bestiary",
       "label": "Pathfinder Bestiary",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/pathfinder-bestiary.db",
       "entity": "Actor"
     },
     {
       "name": "pathfinder-bestiary-2",
       "label": "Pathfinder Bestiary 2",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/pathfinder-bestiary-2.db",
       "entity": "Actor"
     },
     {
       "name": "hazards",
       "label": "Hazards",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/hazards.db",
       "entity": "Actor"
     },
     {
       "name": "age-of-ashes-bestiary",
       "label": "Age of Ashes Bestiary",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/age-of-ashes-bestiary.db",
       "entity": "Actor"
     },
     {
       "name": "extinction-curse-bestiary",
       "label": "Extinction Curse Bestiary",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/extinction-curse-bestiary.db",
       "entity": "Actor"
     },
     {
       "name": "agents-of-edgewatch-bestiary",
       "label": "Agents of Edgewatch Bestiary",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/agents-of-edgewatch-bestiary.db",
       "entity": "Actor"
     },
     {
       "name": "fall-of-plaguestone-bestiary",
       "label": "Fall of Plaguestone Bestiary",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/fall-of-plaguestone.db",
       "entity": "Actor"
     },
     {
       "name": "iconics",
       "label": "Iconics Pregenerated Characters",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/iconics.db",
       "entity": "Actor"
     },
     {
       "name": "npc-gallery",
       "label": "NPC Gallery",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/npc-gallery.db",
       "entity": "Actor"
     },
@@ -154,110 +154,110 @@
       "label": "Ancestry Features (SRD)",
       "path": "packs/ancestryfeatures.db",
       "entity": "Item",
-      "module": "pf2e TEST",
-      "system": "pf2e TEST"
+      "module": "pf2e_TEST",
+      "system": "pf2e_TEST"
     },
     {
       "name": "classfeatures",
       "label": "Class Features (SRD)",
       "path": "packs/classfeatures.db",
       "entity": "Item",
-      "module": "pf2e TEST",
-      "system": "pf2e TEST"
+      "module": "pf2e_TEST",
+      "system": "pf2e_TEST"
     },
     {
       "name": "rollable-tables",
       "label": "Rollable Tables",
       "path": "packs/rollable-tables.db",
       "entity": "RollTable",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST"
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST"
     },
     {
       "name": "backgrounds",
       "label": "Backgrounds (SRD)",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/backgrounds.db",
       "entity": "JournalEntry"
     },
     {
       "name": "deities",
       "label": "Deities",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/deities.db",
       "entity": "JournalEntry"
     },
     {
       "name": "gmg-srd",
       "label": "Game Mastery Guide (SRD)",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/gmg-srd.db",
       "entity": "JournalEntry"
     },
     {
       "name": "classes",
       "label": "Classes (SRD)",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/classes.db",
       "entity": "JournalEntry"
     },
     {
       "name": "criticaldeck",
       "label": "Critical Hit/Fumble Deck",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/criticaldeck.db",
       "entity": "JournalEntry"
     },
     {
       "name": "pf2e-macros",
       "label": "PF2e Macros",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/pf2e-macros.db",
       "entity": "Macro"
     },
     {
       "name": "bestiary-ability-glossary-srd",
       "label": "Bestiary Ability Glossary",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/bestiary-ability-glossary-srd.db",
       "entity": "Item"
     },
     {
       "name": "pathfinder-society-boons",
       "label": "Pathfinder Society Boons",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/pathfinder-society-boons.db",
       "entity": "Item"
     },
     {
       "name": "the-slithering-bestiary",
       "label": "The Slithering Bestiary",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/the-slithering-bestiary.db",
       "entity": "Actor"
     },
     {
       "name": "boons-and-curses",
       "label": "Deity Boons and Curses",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/boons-and-curses.db",
       "entity": "Item"
     },
     {
       "name": "familiar-abilities",
       "label": "Familiar Abilities",
-      "system": "pf2e TEST",
-      "module": "pf2e TEST",
+      "system": "pf2e_TEST",
+      "module": "pf2e_TEST",
       "path": "packs/familiar-abilities.db",
       "entity": "Item"
     }
