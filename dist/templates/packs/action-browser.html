@@ -1,0 +1,62 @@
+<div class="spell-browser">
+    <div class="control-area">
+        <div class="sortcontainer" id="tagfilter">
+            <input class="" name="textFilter" type="text" value="" data-dtype="String" placeholder="{{localize "PF2E.BrowserSearchPlaceholder"}}" title="{{localize "PF2E.BrowserSearchTitle"}}"/>
+            <div class="hint" style="display:none;">
+                {{{localize "PF2E.ActionBrowserSearchHint"}}}
+            </div>
+            <dl id="sorter">
+                <dt>{{localize "PF2E.BrowserSortyByLabel"}}:</dt>
+                <dd><select class="null" name="sortorder">
+                    <option value="true" selected>{{localize "PF2E.BrowserSortyByNameLabel"}}</option>
+                </select></dd>
+            </dl>
+        </div>
+        <button class="clear-filters">{{localize "PF2E.BrowserClearFilters"}}</button>
+        <div class="filtercontainer" id="actionTraitfilter">
+            <h3>{{localize "PF2E.BrowserFilterSkills"}}</h3>
+            <dl>
+                {{#each skills as |skill key|}}
+                <label><dt><input type="checkbox" name="skills-{{lower key}}"></dt><dd>{{skill}}</dd></label>
+                {{/each}}
+            </dl>
+        </div>
+        <div class="filtercontainer" id="actionTraitfilter">
+            <h3>{{localize "PF2E.BrowserFilterProficiencyRequirements"}}</h3>
+            <dl style="display:none;">
+                {{#each proficiencies as |proficiency key|}}
+                <label><dt><input type="checkbox" name="proficiencies-{{lower key}}"></dt><dd>{{proficiency}}</dd></label>
+                {{/each}}
+            </dl>
+        </div>
+        <div class="filtercontainer" id="actionTraitfilter">
+            <h3>{{localize "PF2E.BrowserFilterTraits"}}</h3>
+            <dl style="display:none;">
+                {{#each actionTraits as |trait key|}}
+                <label><dt><input type="checkbox" name="traits-{{lower key}}"></dt><dd>{{trait}}</dd></label>
+                {{/each}}
+            </dl>
+        </div>
+    </div>
+    <ul>
+        {{#each actions as |item id|}}
+        <li class="spell flexrow draggable"
+          data-entry-compendium="{{item.compendium}}"
+          data-entry-id="{{item._id}}" data-item-category="actions"
+            {{#each item.data as |attrib id|}}
+                data-{{lower id}}="{{lower attrib.value}}"
+            {{/each}}
+            data-skills="{{lower item.data.skill_requirement.skill.skill}}"
+            data-proficiencies="{{lower item.data.skill_requirement.skill.rank}}"
+          >
+            <div class="spell-image">
+                <img class="" src="{{item.img}}" title="{{item.name}}" width="32" height="32"/>
+            </div>
+            <div class="spell-name">
+                <span class="item-edit" ><a>{{item.name}}</a></span>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+
+</div>

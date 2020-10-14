@@ -1,0 +1,67 @@
+<div class="check-modifiers-content">
+  <div class="dialog-row header">
+    <span class="type">Type</span>
+    <span class="mod">Modifier</span>
+    <span class="exclude"></span>
+  </div>
+  <hr/>
+  <div class="modifier-container">
+    {{#each check.modifiers as |modifier idx|}}
+    <div class="dialog-row {{#unless modifier.enabled}}modifier-enabled{{/unless}}">
+      <span class="type tag">{{modifier.type}}</span>
+      <span class="mod">{{localize modifier.name}}</span>
+      <span class="value">{{numberFormat modifier.modifier decimals=0 sign=true}}</span>
+      <div class="exclude toggle">
+        <input type="checkbox" id="{{idx}}" data-modifier-index="{{idx}}" {{#if modifier.ignored}}checked{{/if}}>
+        <label for="{{idx}}"></label>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  <hr/>
+  
+  <div class="add-modifier-panel">
+      <input type="text" class="add-modifier-name" placeholder="Modifier Name">
+      <select class="add-modifier-type">
+        <option value="circumstance" selected>{{localize 'PF2E.ModifierType.circumstance'}}</option>
+        <option value="item">{{localize 'PF2E.ModifierType.item'}}</option>
+        <option value="status">{{localize 'PF2E.ModifierType.status'}}</option>
+        <option value="untyped">Untyped (Penalty)</option>
+        <option value="ability">{{localize 'PF2E.ModifierType.ability'}}</option>
+        <option value="proficiency">{{localize 'PF2E.ModifierType.proficiency'}}</option>
+      </select>
+      <input type="text" class="add-modifier-value" placeholder="+1">
+      <button class="add-modifier">+Add</button>
+  </div>
+  <hr/>
+
+  <div class="fate">
+    <label>
+      <input type="radio" name="fate" value="fortune" {{#if fortune}}checked{{/if}}>
+      Fortune
+    </label>
+    <label>
+      <input type="radio" name="fate" value="none"  {{#if none}}checked{{/if}}>
+      None
+    </label>
+    <label>
+      <input type="radio" name="fate" value="misfortune" {{#if misfortune}}checked{{/if}}>
+      Misfortune
+    </label>
+  </div>
+  <hr/>
+
+  <div class="roll-mode-panel">
+    <span class="label">{{localize "PF2E.RollModeLabel"}}</span>
+    <select name="rollmode">
+      {{#select rollMode}}
+      {{#each rollModes as |label key|}}
+      <option value="{{key}}">{{localize label}}</option>
+      {{/each}}
+      {{/select}}
+    </select>
+  </div>
+  <hr/>
+  
+  <button type="button" class="roll">Roll ({{numberFormat check.totalModifier decimals=0 sign=true}})</button>
+</div>
