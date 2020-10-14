@@ -1,5 +1,5 @@
 /* global Dialog, Item, MeasuredTemplate, getProperty, renderTemplate, ui */
-import {sellAllTreasureSimple, sellTreasure} from '../../item/treasure';
+import {sellTreasure, temp} from '../../item/treasure';
 import { AddCoinsPopup } from './AddCoinsPopup';
 import { addKit } from '../../item/kits';
 import { compendiumBrowser } from '../../packs/compendium-browser';
@@ -1605,7 +1605,7 @@ abstract class ActorSheetPF2e extends ActorSheet {
 
   _onSellAllTreasure(event) {
       event.preventDefault();
-      sellAllTreasureSimple(this.actor);
+      temp(this.actor);
   }
 
   _onTraitSelector(event) {

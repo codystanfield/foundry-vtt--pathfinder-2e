@@ -167,6 +167,24 @@ export function addCoinsSimple(actor: ActorPlaceholder, {
     });
 }
 
+export function temp(actor: ActorPlaceholder): void {
+    const d = new Dialog({
+        title: 'Sell all treasure',
+        content: 'Would you like to sell all of your treasure?',
+        buttons: {
+            yes: {
+                label: 'Yes',
+                callback: () => sellAllTreasureSimple(actor),
+            },
+            no: {
+                label: 'No'
+            }
+        },
+        default: 'no',
+    });
+    d.render(true);
+}
+
 export function sellAllTreasureSimple(actor: ActorPlaceholder): Promise<void[]> {
     const {treasureIds, coins} = sellAllTreasure(actor.data.items);
     return Promise.all([
